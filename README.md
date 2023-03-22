@@ -9,4 +9,4 @@ Get the most secure password in an instant! Change the options and see the passw
 
 I built this app in [Scrimba](https://scrimba.com)'s [Frontend Developer Career Path](https://scrimba.com/learn/frontend).
 
-This app showcases event liteners, and randomised generation using javascipt.
+This app showcases event liteners, and randomised generation using javascript.
