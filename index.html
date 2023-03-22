@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Generate a <span class="highlight">secure password</span></h1>
+        <p class="tagline">Never use an insecure password again.</p>
+
+        <div class="divider"></div>
+
+        <div class="password-container">
+          <span class="password" id="password-display"></span>
+          <div class="password-action-buttons">
+            <button id="regenerate-pass-btn">
+              <img src="assets/repeat.svg" />
+            </button>
+            <button id="copy-pass-btn"><img src="assets/copy.svg" /></button>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <h3 class="options-heading">OPTIONS</h3>
+        <div class="options">
+          <div class="input-group">
+            <label for="length-range">Length</label>
+            <span id="length-display"></span>
+            <input
+              type="range"
+              id="length-range"
+              value="14"
+              min="5"
+              max="128"
+              step="1"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="number-check">0 - 9</label>
+            <input type="checkbox" id="number-check" />
+          </div>
+
+          <div class="input-group">
+            <label for="symbol-check">!@#$%^&*</label>
+            <input type="checkbox" id="symbol-check" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
